@@ -27,69 +27,41 @@ Liste des abonnements : http://127.0.0.1:8000/api/subscriptions
 
 Prérequis
 PHP >= 8.0
-
 Composer
-
 Laravel installé (via composer)
-
 Base de données MySQL ou autre compatible
 
 Installation et exécution
+
 Cloner le dépôt
-
-bash
-Copier
-Modifier
-git clone <URL-du-dépôt>
+git clone https://github.com/SaLmaAbaakil/YogaZen-Academy.git
 cd YogaZen/backend
+
 Installer les dépendances
-
-bash
-Copier
-Modifier
 composer install
+
 Configurer l’environnement
-
 Copie le fichier .env.example en .env :
-
-bash
-Copier
-Modifier
 cp .env.example .env
-Puis configure la connexion à ta base de données dans .env :
 
-env
-Copier
-Modifier
+Puis configure la connexion à ta base de données dans .env :
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=nom_de_ta_base
 DB_USERNAME=ton_utilisateur
 DB_PASSWORD=ton_mot_de_passe
+
 Générer la clé d’application
-
-bash
-Copier
-Modifier
 php artisan key:generate
+
 Exécuter les migrations
-
-bash
-Copier
-Modifier
 php artisan migrate
+
 (Optionnel) Seeder la base de données
-
-bash
-Copier
-Modifier
 php artisan db:seed
-Lancer le serveur local
 
-bash
-Copier
-Modifier
+Lancer le serveur local
 php artisan serve
 L’API sera accessible par défaut sur http://127.0.0.1:8000.
 
