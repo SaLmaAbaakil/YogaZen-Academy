@@ -48,9 +48,9 @@ cp .env.example .env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=nom_de_ta_base
-DB_USERNAME=ton_utilisateur
-DB_PASSWORD=ton_mot_de_passe
+DB_DATABASE=yoga_zen_academy
+DB_USERNAME=root
+DB_PASSWORD=
 
 ### Générer la clé d’application
 php artisan key:generate
